@@ -52,3 +52,55 @@ const contactsList = [
 ]
 
 // Your code goes here
+
+const Togusa = document.querySelector('.first-contact')
+const Tachikoma = document.querySelector('.second-contact')
+const Saito = document.querySelector('.third-contact')
+const Motoko = document.querySelector('.fourth-contact')
+const Ishikawa = document.querySelector('.fifth-contact')
+const Aramaki = document.querySelector('.last-contact')
+
+const Togusabutton = document.createElement('button')
+cancelTogusabutton.innerHTML = 'close'
+
+const Tachikomabutton = document.createElement('button')
+cancelTachikomabutton.innerHTML = 'close'
+
+const Saitobutton = document.createElement('button')
+cancelSaitobutton.innerHTML = 'close'
+
+const Motokoabutton = document.createElement('button')
+cancelMotokoabutton.innerHTML = 'close'
+
+const Ishiwakabutton = document.createElement('button')
+cancelIshiwakabutton.innerHTML = 'close'
+
+const Aramakibutton = document.createElement('button')
+cancelAramakibutton.innerHTML = 'close'
+
+
+function display_all_contacts() {
+  contactsList.insertAdjacentHTML('afterbegin', contactsList)
+  Togusa.appendChild(Togusabutton)
+  Tachikoma.appendChild(Tachikomabutton)
+  Saito.appendChild(Saitobutton)
+  Motoko.appendChild(Motokoabutton)
+  Ishikawa.appendChild(Ishiwakabutton)
+  Aramaki.appendChild(Aramakibutton)
+}
+
+
+for (var prop in contactsList) {
+
+  document.getElementById('Togusa-contactsList').innerHTML += '<li>' + prop + '</li>';
+
+}
+
+function display_single_contact() {
+
+}
+
+
+
+
+
